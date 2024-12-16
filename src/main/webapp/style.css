@@ -1,0 +1,140 @@
+
+.slide__body .container .container_slide{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+   
+}
+.slide__body .container .container_slide .slides{
+    width: 100%;
+    display: flex;
+}
+.slide__body .container .container_slide .slides .item{
+    min-width: 100%;
+}
+.slide__body .container .container_slide .slides .item img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: none;
+}
+.slide__body .container .container_slide .next,.prev{
+    position: absolute;
+    top: 50%;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slide__body .container .container_slide .next:hover,.prev:hover{
+    background: saddlebrown;
+}
+.slide__body .container .container_slide .next{
+    right: 0;
+}
+/*product*/
+.body_product{
+    padding: 0px;
+}
+.body_product .container .title{
+    width: 100%;
+    text-align: center;
+    background: #ddd;
+    padding: 2px;
+}
+.body_product .container .title h3{
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+.body_product .container .show_product{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.body_product .container .show_product .card {
+    flex-basis: 18%;
+    margin: 10px 5px;
+}
+.body_product .container .show_product .card .items{
+    position: relative;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+.body_product .container .show_product .card .items .image img{
+    width: 100%;
+}
+.body_product .container .show_product .card .items .text {
+    text-align: left;
+    padding: 5px 0;
+}
+.body_product .container .show_product .card .items .text h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.body_product .container .show_product .card .items .text p{
+    font-weight: 500;
+    margin: 5px 0;
+}
+.body_product .container .show_product .card .items .button{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.body_product .container .show_product .card .items:hover .button{
+    opacity: 1;
+    top: 50%;
+}
+.body_product .container .show_product .card .items .button a{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background:#fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.body_product .container .show_product .card .items .button a:hover{
+    background: hsl(54, 97%, 46%);
+    color: #000;
+}
+/*search*/
+.container_search .image_logo img {
+    width: 200px; 
+    height: 150px; 
+}
+.container_search .search input[type="text"],
+.container_search .search button {
+    border: none;
+    outline: none;
+    background: #fff;
+    
+}
+/* Đặt chiều dài, chiều rộng và màu nền cho thẻ div có class là 'search' */
+.container_search .search {
+    width: 300px; /* Thay đổi giá trị theo nhu cầu của bạn */
+    height: 40px; /* Thay đổi giá trị theo nhu cầu của bạn */
+    background-color:#fff; /* Màu nền */
+    border-radius: 5px; /* Bo tròn góc */
+    border: 1px solid #03031a;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Thêm padding để nội dung không chạm sát mép */
+}
+.container_search{
+    display: flex;
+    align-items: center; 
+    
+    margin: 0px;
+}
+
